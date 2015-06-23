@@ -44,9 +44,18 @@ import UIKit
     }
     
     public func textFieldDidEndEditing() {
-        textLabel.text = text
-        if let text = text {
-            textLabel.hidden = text.isEmpty
+        if secureTextEntry {
+            var pass = ""
+            for c in text {
+                pass += "●"
+            }
+            textLabel.text = pass
+        } else {
+            textLabel.text = text
+        }
+        
+        if let text = text where !text.isEmpty {
+            textLabel.hidden = false
         } else {
             textLabel.hidden = true
         }

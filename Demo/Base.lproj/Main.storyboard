@@ -55,18 +55,34 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="TextField"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-uU-TS3" customClass="BoxedTextView" customModule="TextView" customModuleProvider="target">
+                                <rect key="frame" x="60" y="278" width="480" height="71"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.20820312799999999" green="0.51617086479999996" blue="0.86023396600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="boxColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="TextField"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.306426810342175" green="0.67584142510058332" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pt4-uU-TS3" secondAttribute="trailing" constant="44" id="DZY-Ay-BY1"/>
                             <constraint firstItem="p8u-gY-1JJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="NpO-lF-XBK"/>
                             <constraint firstItem="p8u-gY-1JJ" firstAttribute="top" secondItem="2LE-tq-N6X" secondAttribute="bottom" constant="8" id="STp-Ge-hbS"/>
                             <constraint firstItem="Zgb-RY-Pa1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="45" id="fxn-G3-PJi"/>
+                            <constraint firstItem="Pt4-uU-TS3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="hoY-cV-szp"/>
                             <constraint firstItem="2LE-tq-N6X" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="jl5-4g-ktK"/>
                             <constraint firstItem="Zgb-RY-Pa1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="44" id="kgS-m7-Oco"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zgb-RY-Pa1" secondAttribute="trailing" constant="44" id="nHu-0B-8UY"/>
                             <constraint firstItem="2LE-tq-N6X" firstAttribute="top" secondItem="Zgb-RY-Pa1" secondAttribute="bottom" constant="8" id="qGZ-6p-aKa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="p8u-gY-1JJ" secondAttribute="trailing" constant="44" id="rRN-bC-Y7V"/>
+                            <constraint firstItem="Pt4-uU-TS3" firstAttribute="top" secondItem="p8u-gY-1JJ" secondAttribute="bottom" constant="8" id="t2H-Sz-KIR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2LE-tq-N6X" secondAttribute="trailing" constant="44" id="xFn-hI-CW1"/>
                         </constraints>
                     </view>

@@ -1,15 +1,15 @@
 //
-//  TextViewTests.swift
-//  TextViewTests
+//  AnimatedTextFieldTests.swift
+//  AnimatedTextFieldTests
 //
-//  Created by twb on 6/11/15.
+//  Created by twb on 6/23/15.
 //  Copyright (c) 2015 twb. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class TextViewTests: XCTestCase {
+class AnimatedTextFieldTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

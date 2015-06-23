@@ -1,10 +1,6 @@
 //
 //  TWBTextField.swift
 //  
-//
-//  Created by twb on 6/11/15.
-//
-//
 
 import UIKit
 
@@ -31,12 +27,12 @@ import UIKit
     
     // MARK: Properties
     
-    @IBInspectable public var underlineColor: UIColor? = UIColor.blackColor() {
+    @IBInspectable public var color: UIColor? = UIColor.blackColor() {
         didSet {
             updateProperties()
         }
     }
-
+    
     @IBInspectable public var underlineThickness: CGFloat = 1.0 {
         didSet {
             updateProperties()
@@ -46,8 +42,10 @@ import UIKit
     @IBInspectable public var placeholderMinimizedScale: CGFloat = 0.7
 
     public override func updateProperties() {
-        underlineView.backgroundColor = underlineColor
         super.updateProperties()
+        placeholderLabel.textColor = color
+        textLabel.textColor = color
+        underlineView.backgroundColor = color
     }
     
     // MARK: Layout
@@ -57,7 +55,7 @@ import UIKit
 
         var textSize = CGSize(width: 0, height: 0)
         var placeholderSize = CGSize(width: 0, height: 0)
-        if let text = text {
+        if let text = textLabel.text {
             textSize = text.sizeWithAttributes([NSFontAttributeName:font])
         }
         if let placeholder = placeholder {
