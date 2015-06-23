@@ -61,10 +61,10 @@ import UIKit
         
         var textSize = CGSize(width: 0, height: 0)
         var placeholderSize = CGSize(width: 0, height: 0)
-        if let text = text {
+        if let text = text, font = font {
             textSize = text.sizeWithAttributes([NSFontAttributeName:font])
         }
-        if let placeholder = placeholder {
+        if let placeholder = placeholder, font = font {
             placeholderSize = placeholder.sizeWithAttributes([NSFontAttributeName:font])
         }
 
@@ -95,7 +95,7 @@ import UIKit
     public override func intrinsicContentSize() -> CGSize {
         let size = super.intrinsicContentSize()
         
-        if let placeholder = placeholder {
+        if let placeholder = placeholder, font = font {
             let placeholderSize: CGSize = placeholder.sizeWithAttributes([NSFontAttributeName:font])
             
             return CGSize(

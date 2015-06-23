@@ -44,17 +44,16 @@ import UIKit
     }
     
     public func textFieldDidEndEditing() {
-        if secureTextEntry {
-            var pass = ""
-            for c in text {
-                pass += "●"
-            }
-            textLabel.text = pass
-        } else {
-            textLabel.text = text
-        }
-        
         if let text = text where !text.isEmpty {
+            if secureTextEntry {
+                var pass = ""
+                for _ in text.characters {
+                    pass += "●"
+                }
+                textLabel.text = pass
+            } else {
+                textLabel.text = text
+            }
             textLabel.hidden = false
         } else {
             textLabel.hidden = true
@@ -74,7 +73,7 @@ import UIKit
         }
     }
     
-    @IBInspectable public override var font: UIFont! {
+    @IBInspectable public override var font: UIFont? {
         didSet {
             updateProperties()
         }
@@ -95,7 +94,7 @@ import UIKit
     // MARK: UITextField overrides
     
     public override func editingRectForBounds(bounds: CGRect) -> CGRect {
-        if let text = text {
+        if let text = text, let font = font {
             let textSize: CGSize = text.sizeWithAttributes([NSFontAttributeName:font])
             return CGRect(
                 origin: CGPoint(
