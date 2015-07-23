@@ -1,4 +1,4 @@
-Copyright (c) 2015 Tyler Bell <tyler@tylerwbell.com>
+Copyright (c) 2015 Tyler Bell
 
 MIT License
 

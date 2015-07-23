@@ -24,7 +24,7 @@ import UIKit
         setup()
     }
     
-    required public init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }

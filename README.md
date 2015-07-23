@@ -1,8 +1,12 @@
 # Animated Text Fields for iOS
 
+![](./Resources/Underline.gif)
+
+![](./Resources/Inspectables.png)
+
 # License
 
->Copyright (c) 2015 Tyler Bell <tyler@tylerwbell.com>
+>Copyright (c) 2015 Tyler Bell
 
 >MIT License
 
