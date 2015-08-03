@@ -24,7 +24,7 @@ import UIKit
         setup()
     }
     
-    public required init?(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -47,7 +47,7 @@ import UIKit
         if let text = text where !text.isEmpty {
             if secureTextEntry {
                 var pass = ""
-                for _ in text.characters {
+                for _ in text {
                     pass += "●"
                 }
                 textLabel.text = pass
