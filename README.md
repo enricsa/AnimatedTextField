@@ -4,7 +4,11 @@
 
 ![](./Resources/Inspectables.png)
 
-# License
+## Installation
+
+Add AnimatedTextField manually or as a git submodule in your projects directory structure. Add `AnimatedTextField.xcodeproj` to your project in Xcode and verify the deployment target matches that of your application target. Add `AnimatedTextField.framework` as an embedded binary of your projects application target (Application Project -> Targets -> General -> Embedded Binaries).
+
+## License
 
 >Copyright (c) 2015 Tyler Bell
 
